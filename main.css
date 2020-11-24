@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Spartan', sans-serif;
+  /* - Dark Gray: hsl(0, 0%, 63%)
+  - Black: hsl(0, 0%, 0%)
+  - White: hsl(0, 0%, 100%)
+  - Very Dark Gray: hsl(0, 0%, 27%) */
+  overflow-x: hidden;
+}
+
+.mobile-none{
+  visibility: initial;
+}
+
+.p-6{
+  padding: 6rem;
+}
+
+.wrapper{
+  height: 100vh;
+}
+
+.item-container{
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.d-tall-m-norm{
+  height: 70vh;
+}
+
+h6{
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+p{
+  color: hsl(0, 0%, 60%);
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-left: 18%;
+  padding-right: 30%;
+  height: 24%;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  color: white;
+  text-decoration: none;
+  border-bottom: white 1px solid;
+}
+
+#hamburger-icon{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 7%;
+  left: 10%;
+  z-index: 1000;
+  display: none;
+}
+
+#hamburger-icon:hover{
+  cursor: pointer;
+}
+
+.order-xl-1 span{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 25px;
+  color: white;
+}
+
+img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1000;
+}
+
+#button-container{
+  display: flex;
+  flex-direction: row;
+  width: 150px;
+  height: 15%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#button-container button{
+  border: none;
+  background-color: hsl(0, 0%, 0%);
+  width: 50%;
+  height: 100%;
+}
+
+#button-container button:hover{
+  background-color: hsl(0, 0%, 27%);
+}
+
+#button-container button img{
+  position: static;
+  height: 40%;
+  width: 30%;
+}
+
+#shop-now{
+  text-decoration: none;
+  letter-spacing: 15px;
+  font-size: 20px;
+  color: hsl(0, 0%, 45%);
+}
+
+#shop-now:hover{
+  color: hsl(0, 0%, 70%);
+}
+
+#shop-now img{
+  position: static;
+  width: 10%;
+  height: 10px;
+  fill: hsl(0, 0%, 45%);
+}
+
+@media only screen and (max-width: 1198px){
+  .item-container{
+    min-height: 400px;
+  }
+
+  .min-h-300{
+    height: auto;
+    min-height: 200px;
+  }
+
+  #button-container{
+    left: 90px;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #hamburger-icon{
+    display: initial;
+  }
+
+  nav{
+    top: -1000px;
+    background-color: white;
+  }
+
+  nav a{
+    color: black;
+  }
+
+  #hamburger-icon{
+    fill: black;
+  }
+
+  .mobile-none{
+    align-self: start;
+  }
+
+  .order-xl-1 span{
+    position: relative;
+    top: 8%;
+    left: 40%;
+    font-size: 25px;
+    color: white;
+  }
+
+  
+}
